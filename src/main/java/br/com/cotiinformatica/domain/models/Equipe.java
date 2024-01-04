@@ -11,9 +11,10 @@ import lombok.Data;
 @Data
 @Document(collection = "equipe")
 public class Equipe {
-	
+
 	@Id
 	private UUID id;
 	private String nome;
+	private UUID projetoId;
 	private List<MembroEquipe> membros;
 }

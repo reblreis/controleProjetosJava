@@ -10,10 +10,11 @@ import lombok.Data;
 @Data
 @Document(collection = "tarefa")
 public class Tarefa {
-	
+
 	@Id
 	private UUID id;
 	private String descricao;
 	private String status;
 	private String responsavel;
+	private UUID sprintId;
 }
